@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+
+<body>
+    <script>
+        function calculateDate() {
+            let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+                "Oct", "Nov", "Dec"
+            ];
+            let now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            document.getElementById('date').innerHTML = now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + " &nbsp; " + dayNames[now.getDay()] + " " + monthNames[now.getMonth()] +
+                " " + now.getDate();
+            // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
+            //     .getFullYear());
+        }
+    </script>
+
+    <section class="welcome-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="start-page">
+                        <h1 class="start-title">Hello</h1>
+                        <button id="start-btn">About Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="start-page_icons">
+                        <a href="#"><img src="img/git-icon.png" alt=""></a>
+                        <a href="#"><img src="img/inst-icon.png" alt=""></a>
+                        <a href="#"><img src="img/vk-icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-page">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="header">
+                            <div class="header-calendar">
+                                <span id="date">
+                                    <script>
+                                        function calculateDate() {
+                                            let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+                                            let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+                                                "Oct", "Nov", "Dec"
+                                            ];
+                                            let now = new Date();
+                                            let hours = now.getHours();
+                                            let minutes = now.getMinutes();
+                                            document.write(now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + " &nbsp; " + dayNames[now.getDay()] + " " + monthNames[now.getMonth()] +
+                                                " " + now.getDate());
+                                            // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
+                                            //     .getFullYear());
+                                        }
+
+                                    </script>
+                                    <script>calculateDate();</script>
+                                </span>
+                            </div>
+                            <div class="header-icons">
+                                <img src="img/Untitled-13.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 m-auto">
+                        <div class="left-side">
+                            <div class="content-calendar">
+                                <h2 class="content-time"></h2>
+                                <h3 class="content-date"></h3>
+                                <script>
+                                    function calculateDate() {
+                                        let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                                        let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+                                            "October", "November", "December"
+                                        ];
+                                        let now = new Date();
+                                        let hours = now.getHours();
+                                        let minutes = now.getMinutes();
+                                        document.querySelector('.content-time').innerHTML = now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + "<br>";
+                                        document.querySelector('.content-date').innerHTML = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] +
+                                            " " + now.getDate();
+                                        // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
+                                        //     .getFullYear());
+                                    }
+                                </script>
+                                <script>
+                                    calculateDate();
+                                </script>
+                            </div>
+                            <div class="content-widgets">
+                                <div class="weather">
+                                    <div class="widget-title">
+                                        <img src="img/weather.png" alt=" ">
+                                        <p>Weather</p>
+                                        <span class="widget-arrow">&#8250</span>
+                                    </div>
+                                    <div class="widget-content">
+                                        <img src="img/sun.png" alt="">
+                                        <p><strong>Simferopol</strong><br>
+                                            Sunny <br> Rain: 10%
+                                        </p>
+                                        <p><span>6&deg;</span><br> 13&deg; / 5&deg;
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="shortcuts">
+                                    <div class="widget-title ">
+                                        <img src="img/shortcuts.png" alt=" ">
+                                        <p>Shortcuts</p>
+                                        <span class="widget-arrow">&#8250</span>
+
+                                    </div>
+                                    <div class="widget-content">
+                                        <div class="shortcuts-btn">
+                                            <a href="#" style="background-color: #FFA500;"><img src="img/about.png"
+                                                    alt="">About Me</a>
+                                            <a href="#" style="background-color: #FF4500;"><img src="img/skills.png"
+                                                    alt="">My Skills</a>
+                                        </div>
+                                        <div class="shortcuts-btn">
+                                            <a href="#" style="background-color: #3CB371;"><img src="img/portfolio.png"
+                                                    alt="">Portfolio</a>
+                                            <a href="#" style="background-color: #7B68EE;"><img src="img/letter.png"
+                                                    alt="">Send Email</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-7 col-md-8 col-sm-12 m-auto">
+                        <div class="right-side">
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/Home.png" alt="">
+                                </a>
+                                <p>Home</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/photos.png" alt="">
+                                </a>
+                                <p>Gallery</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/reminders.png" alt="">
+                                </a>
+                                <p>Skills</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/books.png" alt="">
+                                </a>
+                                <p>Books</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/weather.png" alt="">
+                                </a>
+                                <p>Weather</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/messenger.png" alt="">
+                                </a>
+                                <p>Messenger</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="mailto:vendettaff@gmail.com" target="_blank">
+                                    <img src="img/icons/mail.png" alt="">
+                                </a>
+                                <p>Mail</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/Maps.png" alt="">
+                                </a>
+                                <p>Maps</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/settings.png" alt="">
+                                </a>
+                                <p>Settings</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/tv.png" alt="">
+                                </a>
+                                <p>Workstation</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/phone.png" alt="">
+                                </a>
+                                <p>Phone</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/News.png" alt="">
+                                </a>
+                                <p>News</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/Health.png" alt="">
+                                </a>
+                                <p>Health</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/wallet.png" alt="">
+                                </a>
+                                <p>Wallet</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/notes.png" alt="">
+                                </a>
+                                <p>Notes</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/camera.png" alt="">
+                                </a>
+                                <p>Camera</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/clock.png" alt="">
+                                </a>
+                                <p>Clock</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/calculator.png" alt="">
+                                </a>
+                                <p>Calculator</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/contacts.png" alt="">
+                                </a>
+                                <p>Contacts</p>
+                            </div>
+                            <div class="app-icons">
+                                <a href="">
+                                    <img src="img/icons/numbers.png" alt="">
+                                </a>
+                                <p>Statistic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-8 m-auto">
+                        <div class="icons-bar">
+                            <div class="app-icons bottom-bar">
+                                <a href="https://vk.com/pycbkasxe" target="_blank">
+                                    <img src="img/icons/vk.png" alt="">
+                                </a>
+                            </div>
+                            <div class="app-icons bottom-bar">
+                                <a href="https://www.instagram.com/pycbkasxe" target="_blank">
+                                    <img src="img/icons/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="app-icons bottom-bar">
+                                <a href="">
+                                    <img src="img/icons/telegram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="app-icons bottom-bar">
+                                <a href="mailto:vendettaff@gmail.com" target="_blank">
+                                    <img src="img/icons/mail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="app-icons bottom-bar">
+                                <a href="">
+                                    <img src="img/icons/podcasts.png" alt="">
+                                </a>
+                            </div>
+                            <div class="app-icons bottom-bar">
+                                <a href="https://github.com/okeyff" target="_blank">
+                                    <img src="img/icons/github.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="app-icons bottom-bar">
+                                <a href="">
+                                    <img src="img/icons/chrome.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="app-icons bottom-bar">
+                                <a href="">
+                                    <img src="img/icons/steam.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
