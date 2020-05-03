@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSans-Semibold.ttf')
+}
+
+@font-face {
+    font-family: 'SF Display Regular';
+    src: url('../fonts/SFDisplayRegular.ttf')
+}
+
+@font-face {
+    font-family: 'SF Display Bold';
+    src: url('../fonts/SFDisplayBold.ttf')
+}
+
+@font-face {
+    font-family: 'SF Text Medium';
+    src: url('../fonts/SFTextMedium.ttf')
+}
+
+@font-face {
+    font-family: 'SF Display Thin';
+    src: url('../fonts/SFDisplayThin.ttf')
+}
+
+@font-face {
+    font-family: 'SF Display Ultra Light';
+    src: url('../fonts/SFDisplayUltraLight.ttf')
+}
