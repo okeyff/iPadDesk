@@ -61,7 +61,8 @@ body {
 
 .content-page {
     color: #ffffff;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     background: url('../img/body-bg.jpg') no-repeat center / cover;
     border: 15px solid black;
     border-radius: 40px;
