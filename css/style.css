@@ -5,6 +5,7 @@
 
 body {
     background: #000000;
+    min-height: 100vh;
 }
 
 /* welcome page */
@@ -66,7 +67,6 @@ body {
     background: url('../img/body-bg.jpg') no-repeat center / cover;
     border: 15px solid black;
     border-radius: 40px;
-    flex: 1;
     /* display: none; */
 }
 
