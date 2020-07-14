@@ -298,7 +298,8 @@ body {
         font-size: 12px;
     }
     .icons-bar img {
-        width: 50px;
+        width: 50px!important;
+        margin: 0px 6px!important;
     }
 }
 
