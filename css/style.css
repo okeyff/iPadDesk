@@ -72,7 +72,7 @@ body {
 
 .header {
     margin-top: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     height: 30px;
     background: transparent;
     display: flex;
@@ -297,6 +297,9 @@ body {
     .app-icons {
         font-size: 12px;
     }
+    .icons-bar img {
+        width: 50px;
+    }
 }
 
 
@@ -360,4 +363,8 @@ body {
     100% {
         width: 100%;
     }
+}
+
+#status {
+    font-size: 12px;
 }
