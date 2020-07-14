@@ -1,16 +1,16 @@
 let welcomePage = document.querySelector('.welcome-page'),
     contentPage = document.querySelector('.content-page');
 
-document.getElementById('start-btn').onclick = function () {
+document.getElementById('start-btn').onclick = function() {
     welcomePage.style.display = 'none';
     contentPage.style.display = 'block';
 }
 
-// $(document).ready(function(){
+// $(document).ready(function() {
 //     $('.right-side').slick({
-//       setting-name: setting-value
+//         setting - name: setting - value
 //     });
-//   });
+// });
 
 $('.icons-bar').slick({
     infinite: false,
@@ -18,8 +18,7 @@ $('.icons-bar').slick({
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 2048,
             settings: "unslick"
         },
@@ -36,6 +35,7 @@ $('.icons-bar').slick({
     ]
 });
 
+
 $('.right-side').slick({
     infinite: false,
     arrows: false,
@@ -43,8 +43,7 @@ $('.right-side').slick({
     rows: 3,
     slidesToShow: 4,
     slidesToScroll: 4,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 2048,
             settings: "unslick"
         },
