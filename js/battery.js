@@ -11,12 +11,10 @@ navigator.getBattery().then(function(battery) {
     })
 
     function updateChargeInfo() {
-        console.log(battery.charging);
         if (battery.charging) {
-            document.querySelector('#status').innerHTML = 'Заряжается';
+            document.querySelector('#status').innerHTML = '<img id="battery-bolt" src="img/battery-bolt.png">';
             document.querySelector('#battery-level').classList.add('battery-animation');
         } else {
-            document.querySelector('#status').innerHTML = 'Разряжается';
             document.querySelector('#battery-level').classList.remove('battery-animation');
         }
     }
@@ -25,8 +23,7 @@ navigator.getBattery().then(function(battery) {
 
     function updateLevelInfo() {
         //battery.level
-        console.log(battery.level)
         document.querySelector('#battery-level-digit').innerHTML = battery.level * 100 + '%';
-        document.querySelector('#battery-level-').style.width = battery.level * 100 + '%';
+        document.querySelector('#battery-level').style.width = battery.level * 100 + '%';
     }
 });
