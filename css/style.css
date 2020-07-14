@@ -298,7 +298,7 @@ body {
         font-size: 12px;
     }
     .icons-bar img {
-        width: 50px;
+        width: 50pxd;
     }
 }
 
@@ -308,7 +308,6 @@ body {
 .battery-block {
     display: flex;
     align-items: center;
-    margin-top: 15px;
 }
 
 #battery {
@@ -367,4 +366,9 @@ body {
 
 #status {
     font-size: 12px;
+}
+
+#battery-bolt {
+    width: 14px;
+    margin-left: 4px
 }
