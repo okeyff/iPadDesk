@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onselectstart="return false" onmousedown="return false">
     <script>
         function calculateDate() {
             let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -73,7 +73,6 @@
                                             // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
                                             //     .getFullYear());
                                         }
-
                                     </script>
                                     <script>calculateDate();</script>
                                 </span>
@@ -81,14 +80,13 @@
                             <div class="header-icons">
                                 <!-- <img src="img/Untitled-13.png"> -->
                                 <div class="battery-block">
+                                    <div id="connection-status"></div>
                                     <div id="battery-level-digit">0%</div>
                                     <div id="battery">
                                         <div id="battery-level" class="battery-animation">
                                         </div>
                                     </div>
-                                    <div id="status">
-
-                                    </div>
+                                    <div id="status"></div>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +148,7 @@
                                     </div>
                                     <div class="widget-content">
                                         <div class="shortcuts-btn">
-                                            <a href="#" style="background-color: #FFA500;"><img src="img/about.png" alt="">About Me</a>
+                                            <a id="about-me" style="background-color: #FFA500;"><img src="img/about.png" alt="">About Me</a>
                                             <a href="#" style="background-color: #FF4500;"><img src="img/skills.png" alt="">My Skills</a>
                                         </div>
                                         <div class="shortcuts-btn">
@@ -292,6 +290,40 @@
             </div>
         </div>
 
+        <div class="personalize-container">
+            <div class="personalize-toolbar">
+                <button id="btn-close"></button>
+                <button id="btn-max"></button>
+                <button id="btn-min"></button>
+                <span>About Me</span>
+            </div>
+            <div class="personalize-content">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-3">
+                            <img class="about-me-avatar" src="img/hacker.png" alt="">
+                        </div>
+                        <div class="col-7 ml-auto">
+                            <div class="about-me-title">
+                                <h5>Hi, I’m Ruslan. Nice to meet you.</h5>
+                                <p>I am passionate about creating interesting sites and applications, and if they are useful to someone, then this is the best thanks to me. Of course, I’m just at the beginning of my journey to the front end, but someday
+                                    I will achieve excellent results!</p>
+                            </div>
+                            <div class="about-me-content">
+                                <p>Contact me if you are interested:</p>
+                                <p>
+                                    <a href="#"><img src="img/git-icon.png" alt=""></a>
+                                    <a href="#"><img src="img/inst-icon.png" alt=""></a>
+                                    <a href="#"><img src="img/vk-icon.png" alt=""></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <footer class="footer fixed-bottom">
             <div class="container">
                 <div class="row">
@@ -345,6 +377,7 @@
             </div>
         </footer>
     </section>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js "></script>
@@ -355,7 +388,6 @@
     <!-- <script type="text/javascript">
         setTimeout("window.location.reload()", 5000)
     </script> -->
-
 </body>
 
 </html>
