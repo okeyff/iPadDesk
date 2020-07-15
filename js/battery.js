@@ -2,6 +2,7 @@ navigator.getBattery().then(function(battery) {
     function updateAllBatteryInfo() {
         updateChargeInfo();
         updateLevelInfo();
+        updateInternetInfo();
     }
 
     updateAllBatteryInfo();
@@ -23,7 +24,15 @@ navigator.getBattery().then(function(battery) {
 
     function updateLevelInfo() {
         //battery.level
-        document.querySelector('#battery-level-digit').innerHTML = battery.level * 100 + '%';
+        document.querySelector('#battery-level-digit').innerHTML = Math.floor(battery.level * 100) + '%';
         document.querySelector('#battery-level').style.width = battery.level * 100 + '%';
+    }
+
+    function updateInternetInfo() {
+        if (navigator.onLine) {
+            document.querySelector('#connection-status').innerHTML = '<img id="wifi-icon" src="img/wifi-icon-on.png">';
+        } else {
+            document.querySelector('#connection-status').innerHTML = '<img id="wifi-icon" src="img/wifi-icon-off.png">';
+        }
     }
 });
