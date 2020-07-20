@@ -12,22 +12,8 @@
 
 </head>
 
-<body onselectstart="return false" onmousedown="return false">
-    <script>
-        function calculateDate() {
-            let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-            let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
-                "Oct", "Nov", "Dec"
-            ];
-            let now = new Date();
-            let hours = now.getHours();
-            let minutes = now.getMinutes();
-            document.getElementById('date').innerHTML = now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + " &nbsp; " + dayNames[now.getDay()] + " " + monthNames[now.getMonth()] +
-                " " + now.getDate();
-            // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
-            //     .getFullYear());
-        }
-    </script>
+<body onload="calculateDateContent(); calculateDateHeader();" onselectstart="return false" onmousedown="return false">
+
 
     <section class="welcome-page">
         <div class="container">
@@ -59,26 +45,9 @@
                         <div class="header">
                             <div class="header-calendar">
                                 <span id="date">
-                                    <script>
-                                        function calculateDate() {
-                                            let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-                                            let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
-                                                "Oct", "Nov", "Dec"
-                                            ];
-                                            let now = new Date();
-                                            let hours = now.getHours();
-                                            let minutes = now.getMinutes();
-                                            document.write(now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + " &nbsp; " + dayNames[now.getDay()] + " " + monthNames[now.getMonth()] +
-                                                " " + now.getDate());
-                                            // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
-                                            //     .getFullYear());
-                                        }
-                                    </script>
-                                    <script>calculateDate();</script>
                                 </span>
                             </div>
                             <div class="header-icons">
-                                <!-- <img src="img/Untitled-13.png"> -->
                                 <div class="battery-block">
                                     <div id="connection-status"></div>
                                     <div id="battery-level-digit">0%</div>
@@ -103,25 +72,6 @@
                             <div class="content-calendar">
                                 <h2 class="content-time"></h2>
                                 <h3 class="content-date"></h3>
-                                <script>
-                                    function calculateDate() {
-                                        let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                                        let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
-                                            "October", "November", "December"
-                                        ];
-                                        let now = new Date();
-                                        let hours = now.getHours();
-                                        let minutes = now.getMinutes();
-                                        document.querySelector('.content-time').innerHTML = now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + "<br>";
-                                        document.querySelector('.content-date').innerHTML = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] +
-                                            " " + now.getDate();
-                                        // document.write(dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now
-                                        //     .getFullYear());
-                                    }
-                                </script>
-                                <script>
-                                    calculateDate();
-                                </script>
                             </div>
                             <div class="content-widgets">
                                 <div class="weather">
@@ -307,7 +257,7 @@
                             <div class="about-me-title">
                                 <h5>Hi, I’m Ruslan. Nice to meet you.</h5>
                                 <p>I am passionate about creating interesting sites and applications, and if they are useful to someone, then this is the best thanks to me. Of course, I’m just at the beginning of my journey to the front end, but someday
-                                    I will achieve excellent results! :)</p>
+                                    I will achieve excellent results!</p>
                             </div>
                             <div class="about-me-content">
                                 <p>Contact me if you are interested:</p>
