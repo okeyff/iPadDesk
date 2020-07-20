@@ -6,12 +6,35 @@ document.getElementById('start-btn').onclick = function() {
     contentPage.style.display = 'block';
 }
 
-// $(document).ready(function() {
-//     $('.right-side').slick({
-//         setting - name: setting - value
-//     });
-// });
+/* Clock & Date Widget */
 
+function calculateDateHeader() {
+    let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+        "Oct", "Nov", "Dec"
+    ];
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    document.getElementById('date').innerHTML = (now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + " &nbsp; " + dayNames[now.getDay()] + " " + monthNames[now.getMonth()] + " " + now.getDate());
+    setTimeout("calculateDateHeader()", 100);
+}
+
+function calculateDateContent() {
+    let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+        "October", "November", "December"
+    ];
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    document.querySelector('.content-time').innerHTML = now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + "<br>";
+    document.querySelector('.content-date').innerHTML = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] +
+        " " + now.getDate();
+    setTimeout("calculateDateContent()", 100)
+}
+
+/* Slider */
 $('.icons-bar').slick({
     infinite: false,
     arrows: false,
@@ -108,6 +131,7 @@ function dragElement(elmnt) {
     }
 }
 
+/* About Me Window */
 document.getElementById('about-me').addEventListener('click', function() {
     document.querySelector('.personalize-container').style.display = "block";
 });
