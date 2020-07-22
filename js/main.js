@@ -17,7 +17,7 @@ function calculateDateHeader() {
     let hours = now.getHours();
     let minutes = now.getMinutes();
     document.getElementById('date').innerHTML = (now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + " &nbsp; " + dayNames[now.getDay()] + " " + monthNames[now.getMonth()] + " " + now.getDate());
-    setTimeout("calculateDateHeader()", 100);
+    setTimeout("calculateDateHeader()", 1000);
 }
 
 function calculateDateContent() {
@@ -31,7 +31,7 @@ function calculateDateContent() {
     document.querySelector('.content-time').innerHTML = now.getHours() + ":" + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes() + "<br>";
     document.querySelector('.content-date').innerHTML = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] +
         " " + now.getDate();
-    setTimeout("calculateDateContent()", 100)
+    setTimeout("calculateDateContent()", 1000)
 }
 
 /* Slider */
