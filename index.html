@@ -338,6 +338,28 @@
     <!-- <script type="text/javascript">
         setTimeout("window.location.reload()", 5000)
     </script> -->
+        <script type='text/javascript'>
+(function () {
+window['yandexChatWidgetCallback'] = function() {
+try {
+window.yandexChatWidget = new Ya.ChatWidget({
+guid: '17c59f01-26cc-9253-4031-bfe0e59a421c',
+buttonText: '',
+title: 'Чат',
+theme: 'light',
+collapsedDesktop: 'never',
+collapsedTouch: 'never'
+});
+} catch(e) { }
+};
+var n = document.getElementsByTagName('script')[0],
+s = document.createElement('script');
+s.async = true;
+s.charset = 'UTF-8';
+s.src = 'https://yastatic.net/s3/chat/widget.js';
+n.parentNode.insertBefore(s, n);
+})();
+</script>
 </body>
 
 </html>
