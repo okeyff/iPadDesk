@@ -153,6 +153,8 @@ body {
 }
 
 .shortcuts-btn {
+    cursor: pointer;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +165,7 @@ body {
 .shortcuts-btn a {
     border-radius: 5px;
     width: 100%;
-    margin: 5px;
+    margin: 3px;
     padding: 5px;
     font-size: 12px;
     color: #ffffff;
@@ -483,4 +485,18 @@ body {
     opacity: 0.9;
     transform: scale(1.1);
     box-shadow: #c0c0c0;
+}
+
+
+/* Weather Widget */
+
+.weatherwidget-io {
+    top: 100px!important;
+    display: flex!important;
+    justify-content: center;
+    position: inherit!important;
+}
+
+.weatherwidget-io-frame {
+    top: 20px!important;
 }
