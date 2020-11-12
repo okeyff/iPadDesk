@@ -804,10 +804,7 @@ h1:focus {
     .about__contacts {
         font-size: 12px;
     }
-}
-
-
-/* test feature for mobile (slide icons full width)*/
+    /* test feature for mobile (slide icons full width)*/
 .main-content>.container>.row>.col-lg-7,
 .col-md-10,
 .col-sm-12,
@@ -820,3 +817,7 @@ h1:focus {
     padding: 0;
     margin: 0;
 }
+}
+
+
+
