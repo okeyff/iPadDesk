@@ -234,6 +234,7 @@ body {
 
 .fixed-bottom {
     position: absolute!important;
+    z-index : 0!important;
 }
 
 .icons-bar {
