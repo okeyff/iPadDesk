@@ -804,19 +804,19 @@ h1:focus {
     .about__contacts {
         font-size: 12px;
     }
-    /* test feature for mobile (slide icons full width)*/
-.main-content>.container>.row>.col-lg-7,
-.col-md-10,
-.col-sm-12,
-.m-auto {
-    padding: 0;
+    /* test feature for mobile (slide icons full width) */
+    .main-content>.container>.row>.col-lg-7,
+    .col-md-10,
+    .col-sm-12,
+    .m-auto {
+    padding: 0!important;
     margin: 0!important;
-}
+    }
 
-.main-content>.container {
+    .main-content>.container {
     padding: 0;
     margin: 0;
-}
+    }
 }
 
 
