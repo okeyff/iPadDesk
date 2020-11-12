@@ -6,7 +6,7 @@ document.getElementById('start-btn').onclick = function() {
     contentPage.style.display = 'block';
 }
 
-/* Clock & Date Widget */
+// Clock & Date Widget
 
 function calculateDateHeader() {
     let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -34,7 +34,7 @@ function calculateDateContent() {
     setTimeout("calculateDateContent()", 1000)
 }
 
-/* Slider */
+// Slider
 $('.icons-bar').slick({
     infinite: false,
     arrows: false,
@@ -84,21 +84,19 @@ $('.right-side').slick({
 });
 
 
-
 //Draggable Window (p.s: spizjeno)
-dragElement(document.querySelector((".personalize-container")));
+dragElement(document.querySelector(('.window')));
 
 function dragElement(elmnt) {
     var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
         pos4 = 0;
-    if (document.querySelector('.personalize-toolbar')) {
-
-        /* if present, the header is where you move the DIV from:*/
-        document.querySelector('.personalize-toolbar').onmousedown = dragMouseDown;
+    if (document.querySelector('.window_toolbar')) {
+        // if present, the header is where you move the DIV from:
+        document.querySelector('.window_toolbar').onmousedown = dragMouseDown;
     } else {
-        /* otherwise, move the DIV from anywhere inside the DIV:*/
+        // otherwise, move the DIV from anywhere inside the DIV:
         elmnt.onmousedown = dragMouseDown;
     }
 
@@ -129,13 +127,21 @@ function dragElement(elmnt) {
         document.onmouseup = null;
         document.onmousemove = null;
     }
-}
+};
 
-/* About Me Window */
-document.getElementById('about-me').addEventListener('click', function() {
-    document.querySelector('.personalize-container').style.display = "block";
-});
 
-document.getElementById('btn-close').addEventListener('click', function() {
-    document.querySelector('.personalize-container').style.display = "none";
-});
+// close button for window
+const closeBtn = document.querySelectorAll('.btn-close');
+for (let buttonItem of closeBtn) {
+    buttonItem.addEventListener('click', function() {
+        this.closest('.window').style.display = 'none';
+    })
+};
+
+// open About Me info
+const aboutBtn = document.querySelectorAll('.about-btn');
+for (let aboutBtnItem of aboutBtn) {
+    aboutBtnItem.addEventListener('click', function() {
+        document.querySelector('.about').style.display = 'block';
+    })
+};
