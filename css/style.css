@@ -229,7 +229,11 @@ body {
 /*footer*/
 
 .footer {
-    bottom: 30px!important;
+    bottom: 25px!important;
+}
+
+.fixed-bottom {
+    position: absolute!important;
 }
 
 .icons-bar {
