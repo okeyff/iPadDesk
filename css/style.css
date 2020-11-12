@@ -425,7 +425,7 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     position: absolute;
-    z-index: 9;
+    z-index: 9999;
     background: rgba(30, 30, 30, 0.99);
     display: none;
 }
