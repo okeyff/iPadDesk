@@ -229,7 +229,7 @@ body {
 /*footer*/
 
 .footer {
-    bottom: 5px!important;
+    bottom: 25px!important;
 }
 
 .fixed-bottom {
@@ -722,6 +722,9 @@ h1:focus {
 }
 
 @media (max-width: 476px) {
+    .footer {
+        bottom: 10px!important;
+    }
     .content-page {
         border: none;
         border-radius: 0;
