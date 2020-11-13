@@ -229,12 +229,12 @@ body {
 /*footer*/
 
 .footer {
-    bottom: 25px!important;
+    bottom: 5px!important;
 }
 
 .fixed-bottom {
     position: absolute!important;
-    z-index : 0!important;
+    z-index: 0!important;
 }
 
 .icons-bar {
@@ -757,13 +757,12 @@ h1:focus {
     .col-md-10,
     .col-sm-12,
     .m-auto {
-    padding: 0!important;
-    margin: 0!important;
+        padding: 0!important;
+        margin: 0!important;
     }
-
     .main-content>.container {
-    padding: 0;
-    margin: 0;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -818,6 +817,3 @@ h1:focus {
         font-size: 12px;
     }
 }
-
-
-
