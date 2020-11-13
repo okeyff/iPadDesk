@@ -722,6 +722,10 @@ h1:focus {
 }
 
 @media (max-width: 476px) {
+    .content-page {
+        border: none;
+        border-radius: 0;
+    }
     .btn-num {
         font-size: 2rem;
         height: 7rem;
