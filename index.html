@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
-<body onload="calculateDateContent(); calculateDateHeader();" onselectstart="return false" onmousedown="return false">
+<body onload="calculateDateContent(); calculateDateHeader();">
 
 
     <section class="welcome-page">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <i class="fas fa-bolt"></i>
+
         </header>
 
         <div class="main-content">
@@ -106,7 +106,7 @@
                                     <div class="widget-content">
                                         <div class="shortcuts-btn">
                                             <a class="about-btn" id="about-me" style="background-color: #FFA500;"><img src="img/about-me.png" alt="">About Me</a>
-                                            <a href="#" style="background-color: #FF4500;"><img src="img/skills.png" alt="">My Skills</a>
+                                            <a class="my-skills" id="my-skills" style="background-color: #FF4500;"><img src="img/skills.png" alt="">My Skills</a>
                                         </div>
                                         <div class="shortcuts-btn">
                                             <a href="#" style="background-color: #3CB371;"><img src="img/portfolio.png" alt="">Portfolio</a>
@@ -122,71 +122,71 @@
                     <div class="col-lg-7 col-md-10 col-sm-12 m-auto">
                         <div class="right-side">
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/Home.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/Home.png');"></button>
                                 <p>Home</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/photos.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/photos.png');"></button>
                                 <p>Gallery</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/reminders.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/reminders.png');"></button>
                                 <p>Reminders</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/books.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/books.png');"></button>
                                 <p>Books</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/weather.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/weather.png');"></button>
                                 <p>Weather</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/messenger.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/messenger.png');"></button>
                                 <p>Messenger</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/mail.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/mail.png');"></button>
                                 <p>Mail</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/Maps.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/Maps.png');"></button>
                                 <p>Maps</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/settings.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/settings.png');"></button>
                                 <p>Settings</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/tv.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/tv.png');"></button>
                                 <p>Workstation</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/phone.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/phone.png');"></button>
                                 <p>Phone</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/News.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/News.png');"></button>
                                 <p>News</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/Health.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/Health.png');"></button>
                                 <p>Health</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/wallet.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/wallet.png');"></button>
                                 <p>Wallet</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/notes.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/notes.png');"></button>
                                 <p>Notes</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/camera.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/camera.png');"></button>
                                 <p>Camera</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/clock.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/clock.png');"></button>
                                 <p>Clock</p>
                             </div>
                             <div class="app-icons">
@@ -194,7 +194,7 @@
                                 <p>Calculator</p>
                             </div>
                             <div class="app-icons">
-                                <button class="app_icons__btn about-btn" style="background-image: url('/img/icons/contacts.png');"></button>
+                                <button class="app_icons__btn" style="background-image: url('/img/icons/contacts.png');"></button>
                                 <p>Contacts</p>
                             </div>
                             <div class="app-icons">
@@ -294,6 +294,7 @@
                 </div>
             </div>
         </footer>
+
         <div class="calc window">
             <div class="window_toolbar">
                 <button id="btn-close" class="btn-close" title="Close"></button>
@@ -330,6 +331,23 @@
                 <button class="btn-num" id="numEqual" onclick="equal()">=</button>
             </div>
         </div>
+        <div class="skills window">
+            <div class="window_toolbar">
+                <button id="btn-close" class="btn-close" title="Close"></button>
+                <button id="btn-max" title="Maximaze"></button>
+                <button id="btn-min" title="Minimaze"></button>
+                <span>About Me</span>
+            </div>
+            <div class="skills__control">
+                <input type="text" id="skill-name" class="skills__input" placeholder="New Skill">
+                <input type="number" id="skill-value" class="skills__input" placeholder="How Good (%)">
+                <button class="skills_btn" id="skills_btn__add" onclick="addNewSkill()">
+                    Add New
+                </button>
+            </div>
+            <div class="skills_item">
+            </div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
@@ -337,6 +355,7 @@
     <script async src="js/main.js "></script>
     <script async src="js/battery.js"></script>
     <script async src="js/calc.js"></script>
+    <script async src="js/skills.js"></script>
 
 
     <!-- AutoRefresh Page -->

@@ -145,3 +145,11 @@ for (let aboutBtnItem of aboutBtn) {
         document.querySelector('.about').style.display = 'block';
     })
 };
+
+// open My Skills
+const mySkills = document.querySelectorAll('.my-skills');
+for (let mySkillsItem of mySkills) {
+    mySkillsItem.addEventListener('click', function() {
+        document.querySelector('.skills').style.display = 'flex';
+    })
+};
