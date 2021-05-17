@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello, It's Me</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body onload="calculateDateContent(); calculateDateHeader();">
@@ -81,18 +81,12 @@
                                         <span class="widget-arrow">&#8250</span>
                                     </div>
                                     <div class="widget-content">
-                                        <a class="weatherwidget-io" href="https://forecast7.com/en/44d9534d10/simferopol/" data-label_1="SIMFEROPOL" data-icons="iconvault" data-mode="Current" data-days="3" data-theme="original" data-basecolor="">SIMFEROPOL WEATHER</a>
-                                        <script>
-                                            ! function(d, s, id) {
-                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                if (!d.getElementById(id)) {
-                                                    js = d.createElement(s);
-                                                    js.id = id;
-                                                    js.src = 'https://weatherwidget.io/js/widget.min.js';
-                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                }
-                                            }(document, 'script', 'weatherwidget-io-js');
-                                        </script>
+                                        <div class="weather__icon"></div>
+                                        <div class="weather__inform">
+                                            <p class="weather__title"></p>
+                                            <p class="weather__status"></p>
+                                        </div>
+                                        <div class="weather__temp"></div>
                                     </div>
                                 </div>
 
@@ -360,7 +354,7 @@
     <script async src="js/battery.js"></script>
     <script async src="js/calc.js"></script>
     <script async src="js/skills.js"></script>
-
+    <script async src="js/weather.js"></script>
 
     <!-- AutoRefresh Page -->
     <!-- <script type="text/javascript">
