@@ -1,4 +1,4 @@
-fetch('http://api.openweathermap.org/data/2.5/weather?id=693805&appid=c67676d0e7f0932bd319f962bee84f7f')
+fetch('https://api.openweathermap.org/data/2.5/weather?id=693805&appid=c67676d0e7f0932bd319f962bee84f7f')
     .then(function(resp) { return resp.json() })
     .then(function(data) {
         document.querySelector('.weather__icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}.png">`;
