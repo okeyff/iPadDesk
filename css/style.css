@@ -138,15 +138,6 @@ body {
     margin-right: 10px;
 }
 
-.weather>.widget-content {
-    font-family: 'SF Display Regular';
-    letter-spacing: normal;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 1.2rem;
-}
-
 .widget-content img {
     width: 60px;
 }
@@ -399,15 +390,34 @@ body {
 
 /* Weather Widget */
 
-.weatherwidget-io {
-    top: 100px!important;
-    display: flex!important;
-    justify-content: center;
-    position: inherit!important;
+.weather>.widget-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    margin-top: 5px;
 }
 
-.weatherwidget-io-frame {
-    top: 20px!important;
+.weather__inform {
+    text-align: center;
+}
+
+.weather__title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.weather__status {
+    color: #b8b8b8;
+    font-size: 16px;
+}
+
+.weather__temp {
+    font-family: 'SF Display Thin';
+    font-size: 46px;
+    color: #fff;
 }
 
 
@@ -688,6 +698,23 @@ h1:focus {
     -moz-appearance: textfield;
 }
 
+
+/* Media */
+
+@media screen and (max-width: 991px) {
+    header {
+        height: 5vh;
+    }
+    .content-calendar {
+        text-align: center;
+    }
+    .content-widgets {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .right-side {
         justify-content: center;
@@ -863,12 +890,12 @@ h1:focus {
         width: 50px;
     }
     .skills_item__block {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr;
-    align-items: center;
-    justify-items: center;
-    font-size: 16px;
-}
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr;
+        align-items: center;
+        justify-items: center;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 320px) {
